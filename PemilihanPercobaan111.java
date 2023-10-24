@@ -5,9 +5,7 @@ public class PemilihanPercobaan111 {
         Scanner input11 = new Scanner(System.in);
         System.out.print("Masukkan angka: ");
         int angka = input11.nextInt();
-        if (angka % 2 ==0)
-        System.out.println("Angka"+angka+" bilangan genap");
-        else 
-        System.out.println("Angka"+angka+" bilangan ganjil");
+        String jenisBilangan = (angka % 2 == 0) ? "genap" : "ganjil";
+        System.out.println("Angka" + angka + "adalah bilangan" +jenisBilangan);
     }
 }
